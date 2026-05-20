@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBW Enterprise - Where Style Meets Innovation</title>
+    <title>Food Affair Cold Chain Limited - Preserving Freshness, Delivering Excellence Across Nigeria</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: #040404;
-            --color-accent: #fffb4a;
-            --color-bg: #FAFAFA;
-            --color-text: #080808;
-            --color-surface: #101010;
-            --color-secondary-accent: #e90709;
+            --color-primary: #0c162e;
+            --color-accent: #eb4d04;
+            --color-bg: #F6F6F6;
+            --color-text: #081220;
+            --color-surface: #0f1935;
+            --color-secondary-accent: #05b34c;
             --font-display: 'Oswald', sans-serif;
-            --font-body: 'Karla', sans-serif;
-            --border-radius: 0px;
+            --font-body: 'Outfit', sans-serif;
+            --border-radius: 18px;
         }
 
         * {
@@ -33,17 +33,14 @@
         body {
             font-family: var(--font-body);
             color: var(--color-text);
-            background: var(--color-bg);
+            background-color: var(--color-bg);
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-display);
             font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            line-height: 1.1;
+            line-height: 1.2;
         }
 
         @keyframes fadeUp {
@@ -57,22 +54,21 @@
             }
         }
 
-        .nav-bar {
-            position: fixed;
+        /* Navigation */
+        nav {
+            position: sticky;
             top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(250, 250, 250, 0.95);
+            background: rgba(12, 22, 46, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            border-bottom: 3px solid var(--color-primary);
-            animation: fadeUp 0.6s ease forwards;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         .nav-container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem 2rem;
+            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -82,49 +78,25 @@
             font-family: var(--font-display);
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--color-primary);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .logo span {
-            color: var(--color-secondary-accent);
+            color: white;
+            text-decoration: none;
         }
 
         .nav-links {
             display: flex;
-            list-style: none;
             gap: 2rem;
+            list-style: none;
         }
 
         .nav-links a {
+            color: white;
             text-decoration: none;
-            color: var(--color-text);
             font-weight: 500;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            transition: all 0.2s ease;
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background: var(--color-accent);
-            transition: width 0.3s ease;
+            transition: color 0.3s ease;
         }
 
         .nav-links a:hover {
-            color: var(--color-primary);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
+            color: var(--color-accent);
         }
 
         .mobile-menu-btn {
@@ -137,7 +109,7 @@
         .mobile-menu-btn span {
             width: 25px;
             height: 3px;
-            background: var(--color-text);
+            background: white;
             transition: all 0.3s ease;
             transform-origin: center;
         }
@@ -160,8 +132,8 @@
             right: -100%;
             width: 300px;
             height: calc(100vh - 70px);
-            background: var(--color-bg);
-            box-shadow: -8px 0 0 var(--color-primary);
+            background: var(--color-primary);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.3);
             transition: right 0.3s ease;
             z-index: 999;
             padding: 2rem;
@@ -181,35 +153,29 @@
 
         .mobile-menu ul a {
             text-decoration: none;
-            color: var(--color-text);
+            color: white;
             font-size: 1.1rem;
             font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
             transition: color 0.3s ease;
             display: block;
             padding: 0.5rem 0;
         }
 
         .mobile-menu ul a:hover {
-            color: var(--color-secondary-accent);
+            color: var(--color-accent);
         }
 
-        section {
-            padding: 80px 2rem;
+        /* Hero Section */
+        #hero {
             position: relative;
-        }
-
-        .hero-section {
-            min-height: 100vh;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
+            text-align: center;
+            color: white;
             overflow: hidden;
-            padding-top: 0;
             animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.1s;
         }
 
         .hero-bg {
@@ -218,13 +184,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 1;
-        }
-
-        .hero-bg img {
-            width: 100%;
-            height: 100%;
             object-fit: cover;
+            z-index: 0;
         }
 
         .hero-overlay {
@@ -234,285 +195,326 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.55);
-            z-index: 2;
-        }
-
-        .hero-texture {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 3;
-            opacity: 0.03;
-            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><circle cx="50" cy="50" r="40" fill="%23fffb4a"/><circle cx="350" cy="100" r="30" fill="%23e90709"/><circle cx="200" cy="300" r="50" fill="%23fffb4a"/><circle cx="100" cy="250" r="20" fill="%23e90709"/></svg>');
-            background-size: 400px 400px;
-            pointer-events: none;
+            z-index: 1;
         }
 
         .hero-content {
             position: relative;
-            z-index: 4;
-            max-width: 1200px;
-            text-align: center;
-            color: #fff;
-            padding: 2rem;
+            z-index: 2;
+            max-width: 900px;
+            padding: 0 2rem;
         }
 
         .hero-content h1 {
-            font-size: clamp(3rem, 8vw, 7rem);
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .hero-content .tagline {
+            font-size: 1.8rem;
             margin-bottom: 1rem;
             color: var(--color-accent);
-            text-shadow: 4px 4px 0 var(--color-primary);
-            line-height: 0.95;
-            letter-spacing: 3px;
-        }
-
-        .hero-tagline {
-            font-size: clamp(1.2rem, 3vw, 2rem);
             font-weight: 600;
-            margin-bottom: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #fff;
         }
 
-        .hero-copy {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto 2.5rem;
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
             line-height: 1.8;
-            font-weight: 300;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 1rem 3rem;
             background: var(--color-accent);
-            color: var(--color-primary);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: var(--border-radius);
             text-decoration: none;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 1rem;
-            transition: all 0.2s ease;
-            border: 3px solid var(--color-primary);
-            box-shadow: 8px 8px 0 var(--color-secondary-accent);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(235, 77, 4, 0.3);
         }
 
         .cta-button:hover {
-            transform: translate(4px, 4px);
-            box-shadow: 4px 4px 0 var(--color-secondary-accent);
+            background: #d43d00;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(235, 77, 4, 0.4);
         }
 
-        .about-section {
-            background: #fff;
+        /* Section Styles */
+        section {
+            padding: 80px 2rem;
             animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.2s;
         }
 
-        .about-container {
-            max-width: 1400px;
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+        section:nth-child(5) { animation-delay: 0.4s; }
+
+        .container {
+            max-width: 1200px;
             margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+            text-align: center;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            color: var(--color-text);
+            opacity: 0.8;
+        }
+
+        /* About Section */
+        #about {
+            background: white;
+        }
+
+        .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 3rem;
             align-items: center;
         }
 
         .about-image {
-            position: relative;
-        }
-
-        .about-image img {
             width: 100%;
-            height: 600px;
+            height: 500px;
             object-fit: cover;
-            border: 5px solid var(--color-primary);
-            box-shadow: 16px 16px 0 var(--color-accent);
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
 
-        .about-content h2 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            margin-bottom: 1.5rem;
-            color: var(--color-primary);
-            line-height: 1;
-        }
-
-        .about-content h2::after {
-            content: '';
-            display: block;
-            width: 100px;
-            height: 5px;
-            background: var(--color-secondary-accent);
-            margin-top: 1rem;
-        }
-
-        .about-content p {
-            font-size: 1.1rem;
+        .about-text {
+            font-size: 1.05rem;
             line-height: 1.8;
+        }
+
+        .about-text h2 {
+            text-align: left;
             margin-bottom: 1.5rem;
         }
 
-        .services-section {
-            background: var(--color-surface);
-            color: #fff;
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.3s;
-        }
-
-        .services-container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .services-container h2 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            margin-bottom: 3rem;
-            text-align: center;
-            color: var(--color-accent);
+        /* Services Section */
+        #services {
+            background: var(--color-bg);
         }
 
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
+            margin-top: 3rem;
         }
 
         .service-card {
-            background: #1a1a1a;
+            background: white;
             padding: 2rem;
-            border: 3px solid var(--color-accent);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: -3px;
-            left: -3px;
-            right: -3px;
-            bottom: -3px;
-            background: var(--color-secondary-accent);
-            z-index: -1;
-            transform: translate(8px, 8px);
-            transition: transform 0.3s ease;
         }
 
         .service-card:hover {
-            transform: translate(4px, 4px);
-        }
-
-        .service-card:hover::before {
-            transform: translate(4px, 4px);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
         }
 
         .service-card h3 {
-            font-size: 1.5rem;
+            color: var(--color-primary);
             margin-bottom: 1rem;
-            color: var(--color-accent);
+            font-size: 1.5rem;
         }
 
         .service-card p {
+            color: var(--color-text);
             line-height: 1.7;
-            font-weight: 300;
         }
 
-        .contact-section {
-            background: var(--color-accent);
+        /* Why Choose Us Section */
+        #why-choose-us {
+            background: white;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .why-card {
+            background: var(--color-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--color-secondary-accent);
+            transition: all 0.3s ease;
+        }
+
+        .why-card:hover {
+            border-left-color: var(--color-accent);
+            transform: translateX(5px);
+        }
+
+        .why-card h3 {
             color: var(--color-primary);
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.4s;
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
         }
 
-        .contact-container {
-            max-width: 1000px;
+        .why-card p {
+            color: var(--color-text);
+            line-height: 1.7;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: var(--color-surface);
+            color: white;
+        }
+
+        #contact .section-title {
+            color: white;
+        }
+
+        .contact-content {
+            max-width: 800px;
             margin: 0 auto;
             text-align: center;
         }
 
-        .contact-container h2 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            margin-bottom: 2rem;
-            color: var(--color-primary);
-        }
-
-        .contact-copy {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 3rem;
-            white-space: pre-line;
-        }
-
         .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
         }
 
-        .contact-item {
-            background: var(--color-primary);
-            color: var(--color-accent);
-            padding: 1.5rem;
-            border: 3px solid var(--color-primary);
+        .contact-info p {
+            margin: 1rem 0;
+            font-size: 1.1rem;
         }
 
-        .contact-item h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
+        .contact-info strong {
             color: var(--color-accent);
         }
 
-        .contact-item a {
-            color: #fff;
+        .contact-info a {
+            color: white;
             text-decoration: none;
-            font-weight: 500;
             transition: color 0.3s ease;
         }
 
-        .contact-item a:hover {
+        .contact-info a:hover {
             color: var(--color-accent);
         }
 
-        .contact-item p {
-            color: #fff;
-            font-weight: 400;
+        .contact-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
         }
 
+        .contact-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .phone-button {
+            background: var(--color-accent);
+            color: white;
+        }
+
+        .phone-button:hover {
+            background: #d43d00;
+            transform: translateY(-2px);
+        }
+
+        .email-button {
+            background: white;
+            color: var(--color-primary);
+        }
+
+        .email-button:hover {
+            background: var(--color-bg);
+            transform: translateY(-2px);
+        }
+
+        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: #25D366;
-            color: #fff;
             width: 60px;
             height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
             border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            box-shadow: 8px 8px 0 var(--color-primary);
-            z-index: 999;
             text-decoration: none;
             transition: all 0.3s ease;
         }
 
         .whatsapp-float:hover {
-            transform: scale(1.1) rotate(10deg);
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
         }
 
+        /* Footer */
         footer {
             background: var(--color-primary);
-            color: var(--color-accent);
+            color: white;
             text-align: center;
             padding: 2rem;
-            font-weight: 500;
-            letter-spacing: 1px;
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.5s;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        footer a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero-content .tagline {
+                font-size: 1.5rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                height: 400px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -529,54 +531,57 @@
             }
 
             .hero-content h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
 
-            .about-container {
+            .hero-content .tagline {
+                font-size: 1.3rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-image {
+                height: 300px;
+            }
+
+            .services-grid,
+            .why-grid {
                 grid-template-columns: 1fr;
-                gap: 2rem;
             }
 
-            .about-image img {
-                height: 400px;
+            .contact-buttons {
+                flex-direction: column;
             }
 
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-info {
-                grid-template-columns: 1fr;
+            .contact-button {
+                width: 100%;
             }
 
             .whatsapp-float {
                 width: 50px;
                 height: 50px;
-                font-size: 1.5rem;
+                font-size: 24px;
                 bottom: 20px;
                 right: 20px;
-            }
-        }
-
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .about-container {
-                gap: 3rem;
-            }
-
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
 </head>
 <body>
-    <nav class="nav-bar">
+    <nav>
         <div class="nav-container">
-            <div class="logo">BBW <span>ENTERPRISE</span></div>
+            <a href="#" class="logo">Food Affair</a>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose-us">Why Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
@@ -592,108 +597,146 @@
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#why-choose-us">Why Us</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
-    <section id="hero" class="hero-section">
-        <div class="hero-bg">
-            <img src="https://images.pexels.com/photos/35073808/pexels-photo-35073808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="BBW Enterprise Fashion Studio">
-        </div>
+    <section id="hero">
+        <img src="https://images.pexels.com/photos/29116583/pexels-photo-29116583.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Food Affair Cold Chain" class="hero-bg">
         <div class="hero-overlay"></div>
-        <div class="hero-texture"></div>
         <div class="hero-content">
-            <h1>BBW ENTERPRISE</h1>
-            <p class="hero-tagline">Where Style Meets Innovation</p>
-            <p class="hero-copy">Welcome to BBW Enterprise - Your Premier Fashion and Creative Design Destination in Abuja. We bring your style vision to life with expert tailoring, innovative designs, and exceptional craftsmanship. Located in the heart of Kubwa, we've been transforming wardrobes and creating stunning fashion statements for discerning clients across FCT.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <h1>Food Affair Cold Chain Limited</h1>
+            <p class="tagline">Preserving Freshness, Delivering Excellence Across Nigeria</p>
+            <p>Your Trusted Partner in Temperature-Controlled Logistics. From farm to table, we ensure your perishable goods arrive fresh, safe, and on time across Nigeria. State-of-the-art cold chain solutions for restaurants, food producers, and distributors.</p>
+            <a href="#contact" class="cta-button">Get Started Today</a>
         </div>
     </section>
 
-    <section id="about" class="about-section">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="https://images.pexels.com/photos/32668004/pexels-photo-32668004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="BBW Enterprise Studio Interior">
-            </div>
+    <section id="about">
+        <div class="container">
             <div class="about-content">
-                <h2>ABOUT US</h2>
-                <p>BBW Enterprise (also known as Double B.W Enterprise) is your trusted partner for exceptional fashion and creative design services in Abuja. Based at Effobic Plaza, Arab Road, Kubwa, FCT Abuja, we specialize in bringing your unique style to life through expert tailoring, contemporary designs, and personalized fashion solutions.</p>
-                <p>Our team combines traditional craftsmanship with modern design sensibilities to deliver outstanding results for every client. Whether you need bespoke clothing, creative fashion consulting, or custom design work, we're committed to exceeding your expectations with quality, creativity, and attention to detail.</p>
+                <img src="https://images.pexels.com/photos/4487363/pexels-photo-4487363.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Food Affair" class="about-image">
+                <div class="about-text">
+                    <h2 class="section-title">About Us</h2>
+                    <p>Food Affair Cold Chain Limited (also operating as Food Affair Logistics Co) is Nigeria's premier foodtech logistics company specializing in temperature-controlled transportation and storage solutions. Based in Abuja, we understand the critical importance of maintaining the cold chain for perishable goods in Nigeria's dynamic food industry.</p>
+                    <p>Our CEO, a seasoned ghost kitchen operator, founded Food Affair with a deep understanding of the challenges faced by food businesses in preserving product quality during transit. We leverage cutting-edge refrigeration technology, GPS-tracked vehicles, and trained logistics professionals to bridge the gap between food producers and consumers.</p>
+                    <p>Whether you're a restaurant chain, food manufacturer, pharmaceutical company, or agricultural exporter, we guarantee your products maintain optimal temperature from pickup to delivery across the FCT and beyond.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="services-section">
-        <div class="services-container">
-            <h2>OUR SERVICES</h2>
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive cold chain solutions tailored to your business needs</p>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Custom Tailoring & Alterations</h3>
-                    <p>Expert fitting and alterations for all garment types, ensuring perfect fit and comfort for every body type.</p>
+                    <h3>Cold Chain Transportation</h3>
+                    <p>Temperature-controlled delivery of perishables across Abuja and Nigeria with real-time monitoring.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Bespoke Fashion Design</h3>
-                    <p>Original designs created specifically for you, from concept to completion, reflecting your personal style and preferences.</p>
+                    <h3>Cold Storage Solutions</h3>
+                    <p>Secure, hygienic warehouse facilities for short and long-term storage of frozen and chilled goods.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Creative Consulting</h3>
-                    <p>Professional fashion advice and styling guidance to help you build a wardrobe that works for your lifestyle and occasions.</p>
+                    <h3>Last-Mile Delivery</h3>
+                    <p>Reliable cold chain delivery directly to restaurants, retailers, and end consumers.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Corporate & Event Wear</h3>
-                    <p>Specialized designs for corporate settings, weddings, traditional ceremonies, and special occasions.</p>
+                    <h3>Pharmaceutical Logistics</h3>
+                    <p>Specialized handling of temperature-sensitive medications and vaccines.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Fabric Sourcing & Selection</h3>
-                    <p>Access to quality fabrics and materials, with expert guidance on choosing the perfect textiles for your projects.</p>
+                    <h3>Ghost Kitchen Supplies</h3>
+                    <p>Dedicated logistics support for cloud kitchens and virtual restaurants.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Pattern Making & Garment Construction</h3>
-                    <p>Professional pattern development and construction techniques ensuring durability and excellent finish.</p>
+                    <h3>Bulk Distribution</h3>
+                    <p>Efficient cold chain management for large-scale food manufacturers and importers.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Temperature Monitoring</h3>
+                    <p>24/7 IoT-enabled tracking ensuring compliance with food safety standards.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
-        <div class="contact-container">
-            <h2>GET IN TOUCH</h2>
-            <p class="contact-copy">Ready to transform your style? Visit us at our studio in Kubwa or reach out to discuss your fashion needs. We're here to bring your vision to life with creativity, quality, and professionalism. Book your consultation today and experience the BBW Enterprise difference.
-
-Location: Effobic Plaza, Arab Road, Kubwa, FCT Abuja
-Serving: Bwari and surrounding areas in Abuja
-
-Business Hours: Monday - Saturday, 9:00 AM - 6:00 PM
-
-We look forward to creating something beautiful with you!</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3>PHONE</h3>
-                    <a href="tel:+2348134807329">+234 813 480 7329</a>
+    <section id="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Food Affair</h2>
+            <p class="section-subtitle">Your partner in maintaining quality from farm to table</p>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Industry Expertise</h3>
+                    <p>Led by a ghost kitchen CEO who understands food business challenges firsthand.</p>
                 </div>
-                <div class="contact-item">
-                    <h3>EMAIL</h3>
-                    <a href="mailto:info@bbwenterprise.com">info@bbwenterprise.com</a>
+                <div class="why-card">
+                    <h3>Advanced Fleet</h3>
+                    <p>Modern refrigerated vehicles equipped with GPS tracking and temperature logging.</p>
                 </div>
-                <div class="contact-item">
-                    <h3>ADDRESS</h3>
-                    <p>Effobic Plaza, Arab Road, Kubwa, FCT Abuja, Nigeria</p>
+                <div class="why-card">
+                    <h3>Reliable Network</h3>
+                    <p>Extensive coverage across Abuja FCT with expanding reach nationwide.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Quality Assurance</h3>
+                    <p>Strict adherence to NAFDAC standards and international cold chain protocols.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Flexible Solutions</h3>
+                    <p>Customized logistics packages for businesses of all sizes.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Real-Time Updates</h3>
+                    <p>Live tracking and instant notifications for complete supply chain visibility.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Competitive Pricing</h3>
+                    <p>Transparent rates with no hidden charges, optimized for Nigerian businesses.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <a href="https://wa.me/2348134807329" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Get In Touch</h2>
+                <p>Ready to secure your cold chain logistics? Contact Food Affair Cold Chain Limited today for a free consultation and customized quote. Our team is available to discuss your specific requirements and design a solution that keeps your products fresh and your business thriving.</p>
+                <div class="contact-info">
+                    <p><strong>Visit Us:</strong><br>Effobic Plaza, Arab Road, Kubwa, FCT Abuja</p>
+                    <p><strong>Call Us:</strong><br><a href="tel:+2348134807329">0813 480 7329</a></p>
+                    <p><strong>Email:</strong><br><a href="mailto:info@foodaffairng.com">info@foodaffairng.com</a></p>
+                    <p><strong>Serving:</strong><br>Bwari, Abuja FCT, and across Nigeria</p>
+                </div>
+                <p>Let's preserve quality together. Reach out now via phone or WhatsApp to get started.</p>
+                <div class="contact-buttons">
+                    <a href="tel:+2348134807329" class="contact-button phone-button">Call Now</a>
+                    <a href="mailto:info@foodaffairng.com" class="contact-button email-button">Send Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/2348134807329" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 0C7.164 0 0 7.164 0 16C0 18.876 0.776 21.568 2.128 23.872L0.736 30.4L7.52 29.04C9.736 30.264 12.28 31 15 31C23.836 31 31 23.836 31 15C31 6.164 23.836 0 16 0ZM16 2C22.627 2 28 7.373 28 14C28 20.627 22.627 26 16 26C13.584 26 11.336 25.288 9.472 24.064L8.928 23.744L4.64 24.736L5.664 20.576L5.312 20C3.968 18.08 3.2 15.656 3.2 13C3.2 6.373 8.573 2 16 2Z" fill="white"/>
+            <path d="M11.52 8.8C11.28 8.8 10.856 8.888 10.504 9.272C10.152 9.656 9.12 10.616 9.12 12.568C9.12 14.52 10.536 16.408 10.728 16.664C10.92 16.92 13.472 21.08 17.488 22.712C20.816 24.088 21.504 23.816 22.24 23.752C22.976 23.688 24.584 22.792 24.936 21.864C25.288 20.936 25.288 20.136 25.192 19.976C25.096 19.816 24.84 19.72 24.456 19.528C24.072 19.336 22.12 18.376 21.768 18.248C21.416 18.12 21.16 18.056 20.904 18.44C20.648 18.824 19.912 19.72 19.688 19.976C19.464 20.232 19.24 20.264 18.856 20.072C18.472 19.88 17.192 19.48 15.68 18.136C14.504 17.088 13.704 15.8 13.48 15.416C13.256 15.032 13.456 14.824 13.648 14.632C13.824 14.456 14.032 14.184 14.224 13.96C14.416 13.736 14.48 13.576 14.608 13.32C14.736 13.064 14.672 12.84 14.576 12.648C14.48 12.456 13.696 10.496 13.376 9.728C13.056 8.96 12.728 9.064 12.496 9.048C12.264 9.032 12.008 9.032 11.752 9.032C11.496 9.032 11.112 9.128 10.76 9.512C10.408 9.896 9.376 10.856 9.376 12.808C9.376 14.76 10.792 16.648 10.984 16.904C11.176 17.16 13.728 21.32 17.744 22.952C21.072 24.328 21.76 24.056 22.496 23.992C23.232 23.928 24.84 23.032 25.192 22.104C25.544 21.176 25.544 20.376 25.448 20.216C25.352 20.056 25.096 19.96 24.712 19.768C24.328 19.576 22.376 18.616 22.024 18.488C21.672 18.36 21.416 18.296 21.16 18.68C20.904 19.064 20.168 19.96 19.944 20.216C19.72 20.472 19.496 20.504 19.112 20.312C18.728 20.12 17.448 19.72 15.936 18.376C14.76 17.328 13.96 16.04 13.736 15.656C13.512 15.272 13.712 15.064 13.904 14.872C14.08 14.696 14.288 14.424 14.48 14.2C14.672 13.976 14.736 13.816 14.864 13.56C14.992 13.304 14.928 13.08 14.832 12.888C14.736 12.696 13.952 10.736 13.632 9.968C13.312 9.2 12.984 9.304 12.752 9.288L11.52 8.8Z" fill="white"/>
         </svg>
     </a>
 
     <footer>
-        <p>&copy; 2025 BBW Enterprise. All Rights Reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Food Affair Cold Chain Limited. All rights reserved.</p>
+            <p>Preserving Freshness, Delivering Excellence Across Nigeria</p>
+        </div>
     </footer>
 
     <script>
+        // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -703,6 +746,7 @@ We look forward to creating something beautiful with you!</p>
                 mobileMenu.classList.toggle('active');
             });
 
+            // Close mobile menu when clicking a link
             const mobileLinks = mobileMenu.querySelectorAll('a');
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
