@@ -1,41 +1,48 @@
 {
-  "businessName": "BBW Enterprise",
-  "industry": "Fashion and Creative Design",
-  "tone": "creative and stylish",
-  "tagline": "Where Style Meets Innovation",
+  "businessName": "Food Affair Cold Chain Limited",
+  "industry": "FoodTech & Cold Chain Logistics",
+  "tone": "professional yet warm",
+  "tagline": "Preserving Freshness, Delivering Excellence Across Nigeria",
   "sections": [
     {
       "id": "hero",
       "name": "Hero",
-      "copy": "Welcome to BBW Enterprise - Your Premier Fashion and Creative Design Destination in Abuja. We bring your style vision to life with expert tailoring, innovative designs, and exceptional craftsmanship. Located in the heart of Kubwa, we've been transforming wardrobes and creating stunning fashion statements for discerning clients across FCT.",
-      "imagePrompt": "A vibrant, modern Nigerian fashion studio with elegant fabrics draped artistically, professional sewing equipment visible in soft focus, warm golden lighting illuminating colorful African prints and contemporary fashion pieces, sleek mannequins displaying custom designs, located in a contemporary Abuja workspace with polished floors and creative ambiance",
+      "copy": "Food Affair Cold Chain Limited: Your Trusted Partner in Temperature-Controlled Logistics. From farm to table, we ensure your perishable goods arrive fresh, safe, and on time across Nigeria. State-of-the-art cold chain solutions for restaurants, food producers, and distributors.",
+      "imagePrompt": "Modern refrigerated delivery truck on a clean Nigerian highway at golden hour, with lush green farmland in the background, professional commercial photography, vibrant colors showing freshness and reliability, wide angle shot",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "BBW Enterprise (also known as Double B.W Enterprise) is your trusted partner for exceptional fashion and creative design services in Abuja. Based at Effobic Plaza, Arab Road, Kubwa, FCT Abuja, we specialize in bringing your unique style to life through expert tailoring, contemporary designs, and personalized fashion solutions. Our team combines traditional craftsmanship with modern design sensibilities to deliver outstanding results for every client. Whether you need bespoke clothing, creative fashion consulting, or custom design work, we're committed to exceeding your expectations with quality, creativity, and attention to detail.",
-      "imagePrompt": "Interior of a professional Nigerian fashion atelier showing skilled designers at work, fabric samples in rich colors spread across cutting tables, measuring tapes and design sketches visible, modern African-inspired decor, bright natural lighting through large windows, professional yet welcoming atmosphere in an Abuja commercial space",
+      "copy": "Food Affair Cold Chain Limited (also operating as Food Affair Logistics Co) is Nigeria's premier foodtech logistics company specializing in temperature-controlled transportation and storage solutions. Based in Abuja, we understand the critical importance of maintaining the cold chain for perishable goods in Nigeria's dynamic food industry. Our CEO, a seasoned ghost kitchen operator, founded Food Affair with a deep understanding of the challenges faced by food businesses in preserving product quality during transit. We leverage cutting-edge refrigeration technology, GPS-tracked vehicles, and trained logistics professionals to bridge the gap between food producers and consumers. Whether you're a restaurant chain, food manufacturer, pharmaceutical company, or agricultural exporter, we guarantee your products maintain optimal temperature from pickup to delivery across the FCT and beyond.",
+      "imagePrompt": "Interior of a modern cold storage warehouse in Nigeria, stainless steel shelving with organized food products, temperature monitoring displays, warm overhead lighting contrasting with cool refrigeration, professional industrial photography",
       "layout": "split"
     },
     {
       "id": "services",
       "name": "Our Services",
-      "copy": "Custom Tailoring & Alterations - Expert fitting and alterations for all garment types, ensuring perfect fit and comfort for every body type.\n\nBespoke Fashion Design - Original designs created specifically for you, from concept to completion, reflecting your personal style and preferences.\n\nCreative Consulting - Professional fashion advice and styling guidance to help you build a wardrobe that works for your lifestyle and occasions.\n\nCorporate & Event Wear - Specialized designs for corporate settings, weddings, traditional ceremonies, and special occasions.\n\nFabric Sourcing & Selection - Access to quality fabrics and materials, with expert guidance on choosing the perfect textiles for your projects.\n\nPattern Making & Garment Construction - Professional pattern development and construction techniques ensuring durability and excellent finish.",
-      "imagePrompt": "A professional showcase grid displaying various fashion services: a tailor precisely measuring fabric, elegant finished garments on display, colorful fabric swatches arranged artistically, a designer sketching fashion illustrations, modern sewing equipment in action, and beautifully styled African and contemporary wear, shot in bright, professional lighting with Nigerian fashion aesthetic",
+      "copy": "Cold Chain Transportation: Temperature-controlled delivery of perishables across Abuja and Nigeria with real-time monitoring.\n\nCold Storage Solutions: Secure, hygienic warehouse facilities for short and long-term storage of frozen and chilled goods.\n\nLast-Mile Delivery: Reliable cold chain delivery directly to restaurants, retailers, and end consumers.\n\nPharmaceutical Logistics: Specialized handling of temperature-sensitive medications and vaccines.\n\nGhost Kitchen Supplies: Dedicated logistics support for cloud kitchens and virtual restaurants.\n\nBulk Distribution: Efficient cold chain management for large-scale food manufacturers and importers.\n\nTemperature Monitoring: 24/7 IoT-enabled tracking ensuring compliance with food safety standards.",
+      "imagePrompt": "Collage-style professional photos showing: refrigerated truck being loaded, worker in cold storage with safety gear, temperature monitoring tablet screen, fresh vegetables in cold storage, all with clean bright lighting and Nigerian context",
       "layout": "grid"
+    },
+    {
+      "id": "why-choose-us",
+      "name": "Why Choose Food Affair",
+      "copy": "Industry Expertise: Led by a ghost kitchen CEO who understands food business challenges firsthand.\n\nAdvanced Fleet: Modern refrigerated vehicles equipped with GPS tracking and temperature logging.\n\nReliable Network: Extensive coverage across Abuja FCT with expanding reach nationwide.\n\nQuality Assurance: Strict adherence to NAFDAC standards and international cold chain protocols.\n\nFlexible Solutions: Customized logistics packages for businesses of all sizes.\n\nReal-Time Updates: Live tracking and instant notifications for complete supply chain visibility.\n\nCompetitive Pricing: Transparent rates with no hidden charges, optimized for Nigerian businesses.",
+      "imagePrompt": "Professional Nigerian logistics team in branded uniforms standing confidently in front of a fleet of clean refrigerated trucks at the company depot, bright daylight, corporate photography style, modern and trustworthy atmosphere",
+      "layout": "cards"
     },
     {
       "id": "contact",
       "name": "Get In Touch",
-      "copy": "Ready to transform your style? Visit us at our studio in Kubwa or reach out to discuss your fashion needs. We're here to bring your vision to life with creativity, quality, and professionalism. Book your consultation today and experience the BBW Enterprise difference.\n\nLocation: Effobic Plaza, Arab Road, Kubwa, FCT Abuja\nServing: Bwari and surrounding areas in Abuja\n\nBusiness Hours: Monday - Saturday, 9:00 AM - 6:00 PM\n\nWe look forward to creating something beautiful with you!",
-      "imagePrompt": "Inviting exterior or interior shot of a Nigerian fashion studio in Kubwa, Abuja, showing the storefront or welcoming reception area with 'BBW Enterprise' signage, warm lighting, comfortable consultation space with fabric displays, modern and professional setting, hints of Abuja urban architecture visible, approachable and creative atmosphere",
+      "copy": "Ready to secure your cold chain logistics? Contact Food Affair Cold Chain Limited today for a free consultation and customized quote. Our team is available to discuss your specific requirements and design a solution that keeps your products fresh and your business thriving.\n\nVisit Us: Effobic Plaza, Arab Road, Kubwa, FCT Abuja\nCall Us: 0813 480 7329\nServing: Bwari, Abuja FCT, and across Nigeria\n\nLet's preserve quality together. Reach out now via phone or WhatsApp to get started.",
+      "imagePrompt": "Modern Nigerian office reception area with comfortable seating, food safety certificates on the wall, large windows showing delivery trucks outside, professional yet welcoming atmosphere, natural daylight, contemporary interior design",
       "layout": "centered"
     }
   ],
   "contact": {
-    "phone": "+234 813 480 7329",
-    "email": "info@bbwenterprise.com",
+    "phone": "0813 480 7329",
+    "email": "info@foodaffairng.com",
     "address": "Effobic Plaza, Arab Road, Kubwa, FCT Abuja, Nigeria",
     "whatsapp": "https://wa.me/2348134807329"
   }
